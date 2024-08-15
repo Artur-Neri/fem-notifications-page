@@ -1,0 +1,38 @@
+@use '../util' as *;
+
+.header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: rem(32);
+    
+    h1 {
+        display: flex;
+        align-items: flex-end;
+        gap: 9px;
+        @include breakpoint(medium) {
+            gap: 11px;
+        }
+    }
+
+    span {
+        font-size: rem(16);
+        padding: 1px 11px 4px 11px;
+        color: var(--white);
+        border-radius: 6px;
+        background-color: var(--blue);
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+        color: var(--darkGrey );
+        cursor: pointer;
+
+        &:hover {
+            color: var(--blue);
+        }
+    }
+}

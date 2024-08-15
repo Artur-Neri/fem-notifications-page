@@ -1,0 +1,54 @@
+@use '../util' as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; 
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+
+  font-size: rem(16);
+  font-family: var(--jakarta);
+  background-color: var(--snow);
+  @include breakpoint(medium) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+}
+
+.card {
+  background-color: var(--white);
+  outline: 2px solid red;
+  padding-top: rem(24);
+
+  @include breakpoint(medium) {
+    border-radius: rem(15);
+    padding-top: rem(33);
+
+  }
+}
+
+.wrapper {
+  max-width: rem(730);
+  padding: 0 rem(16);
+  padding-top: rem(24);
+  margin-inline: auto;
+
+  @include breakpoint(medium) {
+    margin: 0 rem(20);
+    padding-top: rem(33);
+  }
+}
