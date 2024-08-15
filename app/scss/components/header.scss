@@ -29,6 +29,7 @@
         border: none;
         background-color: transparent;
         color: var(--darkGrey );
+        transition: color .3s ease-in-out;
         cursor: pointer;
 
         &:hover {

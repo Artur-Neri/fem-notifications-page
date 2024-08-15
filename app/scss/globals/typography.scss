@@ -5,8 +5,8 @@ h1,h2,h3 {
 h1 {
   font-size: 1.25rem;
   font-size: clamp(1.25rem, 1.01rem + 1.02vw, 1.5rem);
-
   font-weight: 800;
+  color: var(--veryDarkBlue);
 }
 
 body, button {
